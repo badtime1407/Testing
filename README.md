@@ -7,24 +7,24 @@
 
 | TC ID | Technique | score | เงื่อนไขที่เข้า (Branch) | Expected return | เป้าหมาย | Actual | Status |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| TC1 | BVA / EP | 100 | `score >= 80` | `"A"` | ขอบบนสุดของเกรด A | `"A"` | Pass |
-| TC2 | BVA / EP | 80 | `score >= 80` | `"A"` | ขอบล่างของเกรด A (พอดีเกณฑ์) | `"A"` | Pass |
-| TC3 | BVA | 79 | `score >= 75` | `"B+"` | ขอบบนของเกรด B+ (ต่ำกว่า A อยู่ 1) | `"B+"` | Pass |
-| TC4 | BVA / EP | 75 | `score >= 75` | `"B+"` | ขอบล่างของเกรด B+ | `"B+"` | Pass |
-| TC5 | BVA | 74 | `score >= 70` | `"B"` | ขอบบนของเกรด B | `"B"` | Pass |
-| TC6 | BVA / EP | 70 | `score >= 70` | `"B"` | ขอบล่างของเกรด B | `"B"` | Pass |
-| TC7 | BVA | 69 | `score >= 65` | `"C+"` | ขอบบนของเกรด C+ | `"C+"` | Pass |
-| TC8 | BVA / EP | 65 | `score >= 65` | `"C+"` | ขอบล่างของเกรด C+ | `"C+"` | Pass |
-| TC9 | BVA | 64 | `score >= 60` | `"C"` | ขอบบนของเกรด C | `"C"` | Pass |
-| TC10 | BVA / EP | 60 | `score >= 60` | `"C"` | ขอบล่างของเกรด C | `"C"` | Pass |
-| TC11 | BVA | 59 | `score >= 55` | `"D+"` | ขอบบนของเกรด D+ | `"D+"` | Pass |
-| TC12 | BVA / EP | 55 | `score >= 55` | `"D+"` | ขอบล่างของเกรด D+ | `"D+"` | Pass |
-| TC13 | BVA | 54 | `score >= 50` | `"D"` | ขอบบนของเกรด D | `"D"` | Pass |
-| TC14 | BVA / EP | 50 | `score >= 50` | `"D"` | ขอบล่างของเกรด D | `"D"` | Pass |
-| TC15 | BVA | 49 | `else (0–49)` | `"F"` | ขอบบนของเกรด F (ต่ำกว่า D อยู่ 1) | `"F"` | Pass |
-| TC16 | BVA / EP | 0 | `else (0–49)` | `"F"` | ขอบล่างสุดของเกรด F | `"F"` | Pass |
-| TC17 | BVA / EP (Invalid) | -1 | `score < 0` | `IllegalArgumentException` | คะแนนติดลบ ต่ำกว่าช่วง 0–100 | `IllegalArgumentException` | Pass |
-| TC18 | BVA / EP (Invalid) | 101 | `score > 100` | `IllegalArgumentException` | คะแนนเกิน 100 นอกช่วง 0–100 | `IllegalArgumentException` | Pass |
+| TC1 | BVA / EP | 100 | `score >= 80` | `"A"` | ขอบบนสุดของเกรด A | | Not run |
+| TC2 | BVA / EP | 80 | `score >= 80` | `"A"` | ขอบล่างของเกรด A (พอดีเกณฑ์) | | Not run |
+| TC3 | BVA | 79 | `score >= 75` | `"B+"` | ขอบบนของเกรด B+ (ต่ำกว่า A อยู่ 1) | | Not run |
+| TC4 | BVA / EP | 75 | `score >= 75` | `"B+"` | ขอบล่างของเกรด B+ | | Not run |
+| TC5 | BVA | 74 | `score >= 70` | `"B"` | ขอบบนของเกรด B | | Not run |
+| TC6 | BVA / EP | 70 | `score >= 70` | `"B"` | ขอบล่างของเกรด B | | Not run |
+| TC7 | BVA | 69 | `score >= 65` | `"C+"` | ขอบบนของเกรด C+ | | Not run |
+| TC8 | BVA / EP | 65 | `score >= 65` | `"C+"` | ขอบล่างของเกรด C+ | | Not run |
+| TC9 | BVA | 64 | `score >= 60` | `"C"` | ขอบบนของเกรด C | | Not run |
+| TC10 | BVA / EP | 60 | `score >= 60` | `"C"` | ขอบล่างของเกรด C | | Not run |
+| TC11 | BVA | 59 | `score >= 55` | `"D+"` | ขอบบนของเกรด D+ | | Not run |
+| TC12 | BVA / EP | 55 | `score >= 55` | `"D+"` | ขอบล่างของเกรด D+ | | Not run |
+| TC13 | BVA | 54 | `score >= 50` | `"D"` | ขอบบนของเกรด D | | Not run |
+| TC14 | BVA / EP | 50 | `score >= 50` | `"D"` | ขอบล่างของเกรด D | | Not run |
+| TC15 | BVA | 49 | `else (0–49)` | `"F"` | ขอบบนของเกรด F (ต่ำกว่า D อยู่ 1) | | Not run |
+| TC16 | BVA / EP | 0 | `else (0–49)` | `"F"` | ขอบล่างสุดของเกรด F | | Not run |
+| TC17 | BVA / EP (Invalid) | -1 | `score < 0` | `IllegalArgumentException` | คะแนนติดลบ ต่ำกว่าช่วง 0–100 | | Not run |
+| TC18 | BVA / EP (Invalid) | 101 | `score > 100` | `IllegalArgumentException` | คะแนนเกิน 100 นอกช่วง 0–100 | | Not run |
 
 ### Requirements from the exercise
 
